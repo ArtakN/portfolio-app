@@ -1,11 +1,13 @@
 .home {
    padding: 200px 0 240px 0;
+   border: 1px solid #dd1d1d;
 
    // home__container
 
    &__container {
       max-width: 990px;
       margin: auto;
+      border: 1px solid #dd0d0d;
    }
    
 
