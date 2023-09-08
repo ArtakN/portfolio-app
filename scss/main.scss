@@ -1,3 +1,6 @@
+@use "sass:math";
+@import "mixins.scss";
+
 .home {
    padding: 200px 0 240px 0;
    border: 1px solid #dd1d1d;
@@ -233,6 +236,8 @@
    &__buttons {
       display: flex;
       gap: 24px;
+      margin-top: auto;
+      border: 1px solid #000;
    }
 
    // .project__button

@@ -1,20 +1,10 @@
-//Подключение шрифта
-@mixin font($font_name, $file_name, $weight, $style) {
-	@font-face {
-		font-family: $font_name;
-		font-display: swap;
-		src: url("../fonts/#{$file_name}.woff2") format("woff2"), url("../fonts/#{$file_name}.woff") format("woff");
-		font-weight: #{$weight};
-		font-style: #{$style};
-	}
-}
 //Percent
 @function percent($px, $from) {
 	$result: math.div($px, $from) * 100%;
 	@return $result;
 }
 //REM
-@function rem($px) {
+@function pixToRem($px) {
 	$result: math.div($px, 16) + rem;
 	@return $result;
 }
@@ -66,13 +56,13 @@
 	@if ($yIntersection==0) {
 		$yIntersection: 0.000001;
 	}
-	$flyValue: #{rem($yIntersection)}" + " #{$slope * 100}vw;
+	$flyValue: #{pixToRem($yIntersection)}" + " #{$slope * 100}vw;
 
 	// Получение значения свойства
-	$propertyValue: #{"clamp(" rem($minSize) "," $flyValue "," rem($startSize) ")"};
+	$propertyValue: #{"clamp(" pixToRem($minSize) "," $flyValue "," pixToRem($startSize) ")"};
 	// Если отрицательные значения
 	@if ($minSize > $startSize) {
-		$propertyValue: #{"clamp(" rem($startSize) "," $flyValue "," rem($minSize) ")"};
+		$propertyValue: #{"clamp(" pixToRem($startSize) "," $flyValue "," pixToRem($minSize) ")"};
 	}
 
 	// Если поддерживается clamp();
@@ -81,7 +71,7 @@
 	}
 	// Если не поддерживается clamp();
 	@supports not (#{$property}: $propertyValue) {
-		#{$property}: calc(#{rem($minSize)} + #{$addSize} * (100vw - #{rem($widthTo)}) / #{math.div($widthFrom, 16) - math.div($widthTo, 16)});
+		#{$property}: calc(#{pixToRem($minSize)} + #{$addSize} * (100vw - #{pixToRem($widthTo)}) / #{math.div($widthFrom, 16) - math.div($widthTo, 16)});
 	}
 
 	// Устанавливаем значения по умолчанию
