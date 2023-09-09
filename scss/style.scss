@@ -1,90 +1,77 @@
-@use "sass:math";
+@use 'sass:math';
 
-@import "mixins";
+@import 'mixins';
+@import 'varibles';
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
 
-$fontFamily: 'Poppins', sans-serif;
+$pc: em($containerWidth);
 
-$fontWeight: 500;	
-$fontSize: pixToRem(18);		
-$mainColor: #FFFFFF;
-
-$minWidth: 320;
-$maxWidth: 1920;
-$maxWidthContainer: 0;
-
-$containerPadding: 32;
-
-$containerWidth: $maxWidthContainer + $containerPadding;
-
-$pc: em($containerWidth); 	
-
-$tablet: em(991.98); 		
-$mobile: em(767.98); 		
-$mobileSmall: em(479.98); 
+$tablet: em(991.98);
+$mobile: em(767.98);
+$mobileSmall: em(479.98);
 
 $responsiveType: 1;
 
-@import "null";
+@import 'null';
 
 body {
-	background-color: #171717;
-	.lock & {
-		overflow: hidden;
-		touch-action: none;
-	}
+  background-color: #171717;
+  .lock & {
+    overflow: hidden;
+    touch-action: none;
+  }
 }
 
 .wrapper {
-	min-height: 100%;
-	display: flex;
-	flex-direction: column;
-	overflow: hidden;
-	> main {			
-		flex: 1 1 auto;	
-	}							
-	> * {
-		min-width: 0;
-	}
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  > main {
+    flex: 1 1 auto;
+  }
+  > * {
+    min-width: 0;
+  }
 }
 
 @if ($responsiveType==1) {
-	[class*="__container"] { 	
-		@if ($maxWidthContainer>0) {
-			max-width: pixToRem($maxWidthContainer);
-			box-sizing: content-box;
-			margin: 0 auto;
-		}
-	  	@if ($containerPadding>0) {
-			padding: 0 pixToRem(math.div($containerPadding, 2));
-		}
-	}
+  [class*='__container'] {
+    @if ($maxWidthContainer>0) {
+      max-width: pixToRem($maxWidthContainer);
+      box-sizing: content-box;
+      margin: 0 auto;
+    }
+    @if ($containerPadding>0) {
+      padding: 0 pixToRem(math.div($containerPadding, 2));
+    }
+  }
 } @else {
-	[class*="__container"] {
-		margin: 0 auto;
-		@if ($maxWidthContainer>0) {
-			max-width: pixToRem($maxWidthContainer);
-			box-sizing: content-box;
-		} @else {
-			@if ($containerPadding>0) {
-				padding: 0 pixToRem(math.div($containerPadding, 2));
-			}
-		}
-		@media (max-width: $pc) {
-			max-width: pixToRem(970);
-		}
-		@media (max-width: $tablet) {
-			max-width: pixToRem(750);
-		}
-		@media (max-width: $mobile) {
-			max-width: none;
-			@if ($containerPadding>0 and $maxWidthContainer>0) {
-				padding: 0 pixToRem(math.div($containerPadding, 2));
-			}
-		}
-	}
+  [class*='__container'] {
+    margin: 0 auto;
+    @if ($maxWidthContainer>0) {
+      max-width: pixToRem($maxWidthContainer);
+      box-sizing: content-box;
+    } @else {
+      @if ($containerPadding>0) {
+        padding: 0 pixToRem(math.div($containerPadding, 2));
+      }
+    }
+    @media (max-width: $pc) {
+      max-width: pixToRem(970);
+    }
+    @media (max-width: $tablet) {
+      max-width: pixToRem(750);
+    }
+    @media (max-width: $mobile) {
+      max-width: none;
+      @if ($containerPadding>0 and $maxWidthContainer>0) {
+        padding: 0 pixToRem(math.div($containerPadding, 2));
+      }
+    }
+  }
 }
 
-@import "header";
-@import "main";
+@import 'header';
+@import 'main';

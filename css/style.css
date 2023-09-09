@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
 * {
   padding: 0px;
@@ -19,7 +18,7 @@ body {
 }
 
 body {
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: normal;
   font-family: "Poppins", sans-serif;
   font-size: 1.125rem;
@@ -83,6 +82,7 @@ body {
   overflow: hidden;
   touch-action: none;
 }
+
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -96,8 +96,6 @@ body {
   min-width: 0;
 }
 
-/*	Стили будут применяться ко всем классам, содержащим *__container
-Например, header__container, main__container и т.д.	*/
 [class*=__container] {
   padding: 0 1rem;
 }
@@ -130,7 +128,7 @@ body {
   gap: 40px;
 }
 .header__webMenuList li:hover {
-  color: #007CED;
+  color: #007ced;
 }
 .header__hamburger {
   display: none;
@@ -165,7 +163,9 @@ body {
   }
   @supports not (gap: clamp( 1.5rem , -1.5rem  +  6.25vw , 2.5rem )) {
     .header__webMenuList {
-      gap: calc(1.5rem + 1 * (100vw - 48rem) / 16);
+      gap: calc(
+      1.5rem + 1 * (100vw - 48rem) / 16
+    );
     }
   }
 }
@@ -183,7 +183,9 @@ body {
   }
   @supports not (font-size: clamp( 1.5rem , 1.0833333333rem  +  1.3888888889vw , 1.75rem )) {
     .header__logo {
-      font-size: calc(1.5rem + 0.25 * (100vw - 30rem) / 18);
+      font-size: calc(
+      1.5rem + 0.25 * (100vw - 30rem) / 18
+    );
     }
   }
   .header__webMenu {
@@ -319,7 +321,7 @@ body {
   display: block;
   height: 2px;
   width: 157px;
-  background-color: #007CED;
+  background-color: #007ced;
 }
 .about__text {
   font-family: "Roboto", sans-serif;
@@ -347,7 +349,7 @@ body {
   display: block;
   height: 2px;
   width: 133px;
-  background-color: #007CED;
+  background-color: #007ced;
 }
 
 .project {
@@ -360,13 +362,19 @@ body {
   border-radius: 25px;
   padding: 16px;
   display: flex;
-  gap: 40px;
+  gap: 24px;
 }
 .project__item:hover {
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
 }
 .project__image {
   width: 500px;
+  border-radius: 10px;
+}
+.project__info {
+  display: flex;
+  flex-direction: column;
+  height: 330px;
 }
 .project__title {
   font-size: 24px;
@@ -384,11 +392,14 @@ body {
 }
 .project__used {
   display: flex;
-  gap: 24px;
-  margin-bottom: 40px;
+  gap: 22px;
+  margin-bottom: 24px;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
 }
 .project__usedIcon {
-  height: 24px;
+  height: 30px;
 }
 .project__usedList {
   display: flex;
@@ -397,21 +408,22 @@ body {
 .project__buttons {
   display: flex;
   gap: 24px;
+  justify-content: space-between;
 }
 .project__button {
   display: flex;
-  width: 148px;
+  width: 168px;
   height: 40px;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  border: 1px solid #007CED;
+  border: 1px solid #007ced;
   border-radius: 8px;
   font-size: 16px;
   transition: background-color 0.3s ease-in-out;
 }
 .project__button:hover {
-  background-color: #007CED;
+  background-color: #007ced;
 }
 
 .contact {
@@ -432,7 +444,7 @@ body {
   display: block;
   height: 2px;
   width: 134px;
-  background-color: #007CED;
+  background-color: #007ced;
 }
 .contact__info {
   display: flex;
@@ -489,7 +501,9 @@ body {
   }
   @supports not (padding-top: clamp( 5rem , 2.8571428571rem  +  10.7142857143vw , 12.5rem )) {
     .home {
-      padding-top: calc(5rem + 7.5 * (100vw - 20rem) / 70);
+      padding-top: calc(
+      5rem + 7.5 * (100vw - 20rem) / 70
+    );
     }
   }
   @supports (padding-bottom: clamp( 3.75rem , 0.5357142857rem  +  16.0714285714vw , 15rem )) {
@@ -499,7 +513,9 @@ body {
   }
   @supports not (padding-bottom: clamp( 3.75rem , 0.5357142857rem  +  16.0714285714vw , 15rem )) {
     .home {
-      padding-bottom: calc(3.75rem + 11.25 * (100vw - 20rem) / 70);
+      padding-bottom: calc(
+      3.75rem + 11.25 * (100vw - 20rem) / 70
+    );
     }
   }
   .home__container {
@@ -532,7 +548,7 @@ body {
     display: block;
     width: 100px;
     height: 2px;
-    background-color: #007CED;
+    background-color: #007ced;
     margin-top: 8px;
   }
   @supports (padding-top: clamp( 3.75rem , 1.9642857143rem  +  8.9285714286vw , 10rem )) {
@@ -542,7 +558,9 @@ body {
   }
   @supports not (padding-top: clamp( 3.75rem , 1.9642857143rem  +  8.9285714286vw , 10rem )) {
     .about {
-      padding-top: calc(3.75rem + 6.25 * (100vw - 20rem) / 70);
+      padding-top: calc(
+      3.75rem + 6.25 * (100vw - 20rem) / 70
+    );
     }
   }
   @supports (padding-bottom: clamp( 3.75rem , 1.9642857143rem  +  8.9285714286vw , 10rem )) {
@@ -552,7 +570,9 @@ body {
   }
   @supports not (padding-bottom: clamp( 3.75rem , 1.9642857143rem  +  8.9285714286vw , 10rem )) {
     .about {
-      padding-bottom: calc(3.75rem + 6.25 * (100vw - 20rem) / 70);
+      padding-bottom: calc(
+      3.75rem + 6.25 * (100vw - 20rem) / 70
+    );
     }
   }
   .about__container {
@@ -581,7 +601,9 @@ body {
   }
   @supports not (padding-top: clamp( 3.75rem , 1.9642857143rem  +  8.9285714286vw , 10rem )) {
     .projects {
-      padding-top: calc(3.75rem + 6.25 * (100vw - 20rem) / 70);
+      padding-top: calc(
+      3.75rem + 6.25 * (100vw - 20rem) / 70
+    );
     }
   }
   @supports (padding-bottom: clamp( 3.75rem , 1.9642857143rem  +  8.9285714286vw , 10rem )) {
@@ -591,7 +613,9 @@ body {
   }
   @supports not (padding-bottom: clamp( 3.75rem , 1.9642857143rem  +  8.9285714286vw , 10rem )) {
     .projects {
-      padding-bottom: calc(3.75rem + 6.25 * (100vw - 20rem) / 70);
+      padding-bottom: calc(
+      3.75rem + 6.25 * (100vw - 20rem) / 70
+    );
     }
   }
   .projects__title {
@@ -614,7 +638,9 @@ body {
   }
   @supports not (gap: clamp( 1.5rem , 1.023099851rem  +  2.3845007452vw , 2.5rem )) {
     .project {
-      gap: calc(1.5rem + 1 * (100vw - 20rem) / 41.9375);
+      gap: calc(
+      1.5rem + 1 * (100vw - 20rem) / 41.9375
+    );
     }
   }
   .project__item {
@@ -642,7 +668,9 @@ body {
   }
   @supports not (margin-bottom: clamp( 2rem , 0.2780269058rem  +  3.5874439462vw , 2.5rem )) {
     .project__used {
-      margin-bottom: calc(2rem + 0.5 * (100vw - 48rem) / 13.9375);
+      margin-bottom: calc(
+      2rem + 0.5 * (100vw - 48rem) / 13.9375
+    );
     }
   }
   @supports (padding-top: clamp( 3.75rem , 1.9642857143rem  +  8.9285714286vw , 10rem )) {
@@ -652,7 +680,9 @@ body {
   }
   @supports not (padding-top: clamp( 3.75rem , 1.9642857143rem  +  8.9285714286vw , 10rem )) {
     .contact {
-      padding-top: calc(3.75rem + 6.25 * (100vw - 20rem) / 70);
+      padding-top: calc(
+      3.75rem + 6.25 * (100vw - 20rem) / 70
+    );
     }
   }
   @supports (padding-bottom: clamp( 3.75rem , 1.9642857143rem  +  8.9285714286vw , 10rem )) {
@@ -662,7 +692,9 @@ body {
   }
   @supports not (padding-bottom: clamp( 3.75rem , 1.9642857143rem  +  8.9285714286vw , 10rem )) {
     .contact {
-      padding-bottom: calc(3.75rem + 6.25 * (100vw - 20rem) / 70);
+      padding-bottom: calc(
+      3.75rem + 6.25 * (100vw - 20rem) / 70
+    );
     }
   }
   .contact__title {
@@ -686,7 +718,9 @@ body {
   }
   @supports not (gap: clamp( 2.5rem , -5rem  +  15.625vw , 5rem )) {
     .contact__info {
-      gap: calc(2.5rem + 2.5 * (100vw - 48rem) / 16);
+      gap: calc(
+      2.5rem + 2.5 * (100vw - 48rem) / 16
+    );
     }
   }
   .contact__links {
@@ -701,7 +735,9 @@ body {
   }
   @supports not (font-size: clamp( 1.5rem , 0.6666666667rem  +  2.7777777778vw , 2rem )) {
     .home__title {
-      font-size: calc(1.5rem + 0.5 * (100vw - 30rem) / 18);
+      font-size: calc(
+      1.5rem + 0.5 * (100vw - 30rem) / 18
+    );
     }
   }
   @supports (font-size: clamp( 2.1875rem , 1.4285714286rem  +  3.7946428571vw , 3.25rem )) {
@@ -711,7 +747,9 @@ body {
   }
   @supports not (font-size: clamp( 2.1875rem , 1.4285714286rem  +  3.7946428571vw , 3.25rem )) {
     .home__title span {
-      font-size: calc(2.1875rem + 1.0625 * (100vw - 20rem) / 28);
+      font-size: calc(
+      2.1875rem + 1.0625 * (100vw - 20rem) / 28
+    );
     }
   }
   @supports (font-size: clamp( 1.25rem , 0.8333333333rem  +  1.3888888889vw , 1.5rem )) {
@@ -721,7 +759,9 @@ body {
   }
   @supports not (font-size: clamp( 1.25rem , 0.8333333333rem  +  1.3888888889vw , 1.5rem )) {
     .home__subtitle {
-      font-size: calc(1.25rem + 0.25 * (100vw - 30rem) / 18);
+      font-size: calc(
+      1.25rem + 0.25 * (100vw - 30rem) / 18
+    );
     }
   }
   @supports (gap: clamp( 1.5rem , 0.6666666667rem  +  2.7777777778vw , 2rem )) {
@@ -731,7 +771,9 @@ body {
   }
   @supports not (gap: clamp( 1.5rem , 0.6666666667rem  +  2.7777777778vw , 2rem )) {
     .home__skills {
-      gap: calc(1.5rem + 0.5 * (100vw - 30rem) / 18);
+      gap: calc(
+      1.5rem + 0.5 * (100vw - 30rem) / 18
+    );
     }
   }
   @supports (padding-top: clamp( 2.5rem , 0.4166666667rem  +  6.9444444444vw , 3.75rem )) {
@@ -741,7 +783,9 @@ body {
   }
   @supports not (padding-top: clamp( 2.5rem , 0.4166666667rem  +  6.9444444444vw , 3.75rem )) {
     .home__skills {
-      padding-top: calc(2.5rem + 1.25 * (100vw - 30rem) / 18);
+      padding-top: calc(
+      2.5rem + 1.25 * (100vw - 30rem) / 18
+    );
     }
   }
   @supports (font-size: clamp( 1.5rem , 0.6666666667rem  +  2.7777777778vw , 2rem )) {
@@ -751,7 +795,9 @@ body {
   }
   @supports not (font-size: clamp( 1.5rem , 0.6666666667rem  +  2.7777777778vw , 2rem )) {
     .about__title {
-      font-size: calc(1.5rem + 0.5 * (100vw - 30rem) / 18);
+      font-size: calc(
+      1.5rem + 0.5 * (100vw - 30rem) / 18
+    );
     }
   }
   @supports (margin-bottom: clamp( 1.5rem , 0.6666666667rem  +  2.7777777778vw , 2rem )) {
@@ -761,7 +807,9 @@ body {
   }
   @supports not (margin-bottom: clamp( 1.5rem , 0.6666666667rem  +  2.7777777778vw , 2rem )) {
     .about__title {
-      margin-bottom: calc(1.5rem + 0.5 * (100vw - 30rem) / 18);
+      margin-bottom: calc(
+      1.5rem + 0.5 * (100vw - 30rem) / 18
+    );
     }
   }
   @supports (gap: clamp( 2.5rem , 0.8333333333rem  +  5.5555555556vw , 3.5rem )) {
@@ -771,7 +819,9 @@ body {
   }
   @supports not (gap: clamp( 2.5rem , 0.8333333333rem  +  5.5555555556vw , 3.5rem )) {
     .about__container {
-      gap: calc(2.5rem + 1 * (100vw - 30rem) / 18);
+      gap: calc(
+      2.5rem + 1 * (100vw - 30rem) / 18
+    );
     }
   }
   @supports (font-size: clamp( 1.5rem , 0.6666666667rem  +  2.7777777778vw , 2rem )) {
@@ -781,7 +831,9 @@ body {
   }
   @supports not (font-size: clamp( 1.5rem , 0.6666666667rem  +  2.7777777778vw , 2rem )) {
     .projects__title {
-      font-size: calc(1.5rem + 0.5 * (100vw - 30rem) / 18);
+      font-size: calc(
+      1.5rem + 0.5 * (100vw - 30rem) / 18
+    );
     }
   }
   @supports (margin-bottom: clamp( 2.5rem , 0.8333333333rem  +  5.5555555556vw , 3.5rem )) {
@@ -791,7 +843,9 @@ body {
   }
   @supports not (margin-bottom: clamp( 2.5rem , 0.8333333333rem  +  5.5555555556vw , 3.5rem )) {
     .projects__title {
-      margin-bottom: calc(2.5rem + 1 * (100vw - 30rem) / 18);
+      margin-bottom: calc(
+      2.5rem + 1 * (100vw - 30rem) / 18
+    );
     }
   }
   @supports (width: clamp( 25rem , 14.5833333333rem  +  34.7222222222vw , 31.25rem )) {
@@ -801,7 +855,9 @@ body {
   }
   @supports not (width: clamp( 25rem , 14.5833333333rem  +  34.7222222222vw , 31.25rem )) {
     .project__image {
-      width: calc(25rem + 6.25 * (100vw - 30rem) / 18);
+      width: calc(
+      25rem + 6.25 * (100vw - 30rem) / 18
+    );
     }
   }
   @supports (max-width: clamp( 25rem , 14.5833333333rem  +  34.7222222222vw , 31.25rem )) {
@@ -811,7 +867,9 @@ body {
   }
   @supports not (max-width: clamp( 25rem , 14.5833333333rem  +  34.7222222222vw , 31.25rem )) {
     .project__info {
-      max-width: calc(25rem + 6.25 * (100vw - 30rem) / 18);
+      max-width: calc(
+      25rem + 6.25 * (100vw - 30rem) / 18
+    );
     }
   }
   @supports (font-size: clamp( 1.25rem , 0.8333333333rem  +  1.3888888889vw , 1.5rem )) {
@@ -821,7 +879,9 @@ body {
   }
   @supports not (font-size: clamp( 1.25rem , 0.8333333333rem  +  1.3888888889vw , 1.5rem )) {
     .project__title {
-      font-size: calc(1.25rem + 0.25 * (100vw - 30rem) / 18);
+      font-size: calc(
+      1.25rem + 0.25 * (100vw - 30rem) / 18
+    );
     }
   }
   @supports (font-size: clamp( 1.5rem , 0.6666666667rem  +  2.7777777778vw , 2rem )) {
@@ -831,7 +891,9 @@ body {
   }
   @supports not (font-size: clamp( 1.5rem , 0.6666666667rem  +  2.7777777778vw , 2rem )) {
     .contact__title {
-      font-size: calc(1.5rem + 0.5 * (100vw - 30rem) / 18);
+      font-size: calc(
+      1.5rem + 0.5 * (100vw - 30rem) / 18
+    );
     }
   }
   @supports (margin-bottom: clamp( 2.5rem , 0.8333333333rem  +  5.5555555556vw , 3.5rem )) {
@@ -841,7 +903,9 @@ body {
   }
   @supports not (margin-bottom: clamp( 2.5rem , 0.8333333333rem  +  5.5555555556vw , 3.5rem )) {
     .contact__title {
-      margin-bottom: calc(2.5rem + 1 * (100vw - 30rem) / 18);
+      margin-bottom: calc(
+      2.5rem + 1 * (100vw - 30rem) / 18
+    );
     }
   }
   .contact__main {
@@ -858,7 +922,9 @@ body {
   }
   @supports not (width: clamp( 20rem , 10rem  +  50vw , 25rem )) {
     .home__img {
-      width: calc(20rem + 5 * (100vw - 20rem) / 10);
+      width: calc(
+      20rem + 5 * (100vw - 20rem) / 10
+    );
     }
   }
   @supports (width: clamp( 18rem , -1rem  +  95vw , 27.5rem )) {
@@ -868,7 +934,9 @@ body {
   }
   @supports not (width: clamp( 18rem , -1rem  +  95vw , 27.5rem )) {
     .about__img {
-      width: calc(18rem + 9.5 * (100vw - 20rem) / 10);
+      width: calc(
+      18rem + 9.5 * (100vw - 20rem) / 10
+    );
     }
   }
   @supports (width: clamp( 16rem , -2rem  +  90vw , 25rem )) {
@@ -878,7 +946,9 @@ body {
   }
   @supports not (width: clamp( 16rem , -2rem  +  90vw , 25rem )) {
     .project__image {
-      width: calc(16rem + 9 * (100vw - 20rem) / 10);
+      width: calc(
+      16rem + 9 * (100vw - 20rem) / 10
+    );
     }
   }
   @supports (max-width: clamp( 16rem , -2rem  +  90vw , 25rem )) {
@@ -888,7 +958,9 @@ body {
   }
   @supports not (max-width: clamp( 16rem , -2rem  +  90vw , 25rem )) {
     .project__info {
-      max-width: calc(16rem + 9 * (100vw - 20rem) / 10);
+      max-width: calc(
+      16rem + 9 * (100vw - 20rem) / 10
+    );
     }
   }
   @supports (padding-left: clamp( 0.0000000625rem , -1.9999998125rem  +  9.999999375vw , 1rem )) {
@@ -898,7 +970,9 @@ body {
   }
   @supports not (padding-left: clamp( 0.0000000625rem , -1.9999998125rem  +  9.999999375vw , 1rem )) {
     .project__info {
-      padding-left: calc(0.0000000625rem + 0.9999999375 * (100vw - 20rem) / 10);
+      padding-left: calc(
+      0.0000000625rem + 0.9999999375 * (100vw - 20rem) / 10
+    );
     }
   }
   @supports (padding-right: clamp( 0.0000000625rem , -1.9999998125rem  +  9.999999375vw , 1rem )) {
@@ -908,7 +982,9 @@ body {
   }
   @supports not (padding-right: clamp( 0.0000000625rem , -1.9999998125rem  +  9.999999375vw , 1rem )) {
     .project__info {
-      padding-right: calc(0.0000000625rem + 0.9999999375 * (100vw - 20rem) / 10);
+      padding-right: calc(
+      0.0000000625rem + 0.9999999375 * (100vw - 20rem) / 10
+    );
     }
   }
   .project__usedTitle {
@@ -921,7 +997,9 @@ body {
   }
   @supports not (width: clamp( 7.125rem , -1.375rem  +  42.5vw , 9.25rem )) {
     .project__button {
-      width: calc(7.125rem + 2.125 * (100vw - 20rem) / 5);
+      width: calc(
+      7.125rem + 2.125 * (100vw - 20rem) / 5
+    );
     }
   }
 }
