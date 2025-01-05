@@ -1,163 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-   <link rel="manifest" href="/favicon/site.webmanifest">
-   <link rel="stylesheet" href="css/style.css">
-   <title>Artak Navoyan | Front-End Dev</title>
-</head>
-<body>
-   <div class="wrapper">
-      <header class="header">
-         <div class="header__container">
-            <p class="header__logo"><a href="index.html">Artak N.</a></p>
-            <nav class="header__webMenu">
-               <ul class="header__webMenuList">
-                  <li><a href="#home" class="header__webMenulink">Home</a></li>
-                  <li><a href="#about" class="header__webMenulink">About</a></li>
-                  <li><a href="#projects" class="header__webMenulink">Projects</a></li>
-                  <li><a href="#contact" class="header__webMenulink">Contact</a></li>
-               </ul>
-            </nav>
-            <div class="header__hamburger">
-               <span></span>
-            </div>
-            <div class="header__mobileMenu">
-               <div class="header__closeMobileMenu">
-                  <img src="./img/icons/close.svg" alt="Menu close icon">
-               </div>
-               <nav>
-                  <ul class="header__mobileMenuList">
-                     <li><a href="#home" class="header__mobileMenuItem">Home</a></li>
-                     <li><a href="#about" class="header__mobileMenuItem">About</a></li>
-                     <li><a href="#projects" class="header__mobileMenuItem">Projects</a></li>
-                     <li><a href="#contact" class="header__mobileMenuItem">Contact</a></li>
-                  </ul>
-               </nav>
-            </div>
-         </div>
-      </header>
-      <main class="main">
-         <section class="main__home home" id="home">
-            <div class="home__container">
-               <div class="home__info">
-                  <div>
-                     <p class="home__title">Hi, I am <br> 
-                        <span>Artak Navoyan</span>
-                     </p>
-                     <p class="home__subtitle">Front-End Developer</p> 
-                  </div>
-                  <div>
-                     <img class="home__img" src="./img/me.jpg" alt="My_photo">
-                  </div>
-               </div>
-               <div class="home__skills">
-                  <p class="home__skillsTitle">
-                     Tech Stack
-                  </p>
-                  <ul class="home__skillsList">
-                     <li><img src="./img/icons/html.png" alt="HTML Icon"></li>
-                     <li><img src="./img/icons/css.png" alt="CSS Icon"></li>
-                     <li><img src="./img/icons/js.png" alt="JS Icon"></li>
-                     <li><img src="./img/icons/react.png" alt="React Icon"></li>
-                     <li><img src="./img/icons/redux.png" alt="Redux Icon"></li>
-                     <li><img src="./img/icons/ts.png" alt="Redux Icon"></li>
-                     <li><img src="./img/icons/sass.png" alt="Redux Icon"></li>
-                     <li><img src="./img/icons/tw.png" alt="Redux Icon"></li>
-                     <li><img src="./img/icons/git.png" alt="Redux Icon"></li>
-                  </ul>
-               </div>
-            </div>
-         </section>
-         <section class="main__about about" id="about">
-            <div class="about__container">
-               <div class="about__imgBlock">
-                  <img src="./img/about.png" alt="About me section image" class="about__img">
-               </div>
-               <div class="about__textBlock">
-                  <p class="about__title">
-                     About Me
-                  </p>
-                  <p class="about__text">
-                     As a Front-End Developer, I have a strong skill set in HTML, CSS, SCSS, JavaScript, React, Redux Toolkit and TypeScript. I am passionate about designing and building responsive websites that provide a seamless user experience. My expertise lies in creating dynamic and engaging interfaces through writing clean and optimized code, and utilizing the latest development tools and techniques. I am also a team player who enjoys collaborating with cross-functional teams to deliver outstanding web applications.
-                  </p>
-               </div>
-            </div>
-         </section>
-         <section class="main__projects projects" id="projects">
-            <div class="projects__container">
-               <p class="projects__title">Projects</p>
-                  <div class="projects__project project">
-                     <div class="project__item">
-                        <div>
-                           <img class="project__image" src="./img/project-1.png" alt="Project image" >
-                        </div>
-                        <div class="project__info">
-                           <p class="project__title">CryptoView</p>
-                           <p class="project__description">CryptoView is a web application for cryptocurrency enthusiasts and traders. It offers real-time tracking of the top 50 cryptocurrencies, sourced directly from CoinGecko. The platform also provides learning resources to help users understand the world of cryptocurrencies.</p>
-                           <div class="project__used">
-                              <ul class="project__usedList">
-                                 <li>
-                                    <img class="project__usedIcon" src="./img/icons/html.png" alt="HTML icon">
-                                 </li>
-                                 <li>
-                                    <img class="project__usedIcon" src="./img/icons/sass.png" alt="SCSS icon">
-                                 </li>
-                                 <li>
-                                    <img class="project__usedIcon" src="./img/icons/js.png" alt="JS Icon">
-                                 </li>
-                              </ul>
-                           </div>
-                           <div class="project__buttons">
-                              <a href="https://myportfolio-crytoview.netlify.app" target="_blank"><button class="project__button" type="button">View Live</button></a>
-                              <a href="https://github.com/ArtakN/crypto-app" target="_blank"><button class="project__button" type="button">Github Repo</button></a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="project__item">
-                        <div>
-                           <img class="project__image" src="./img/project-2.png" alt="Project image" >
-                        </div>
-                        <div class="project__info">
-                           <p class="project__title">Wortschatz</p>
-                           <p class="project__description">Wortschatz is a fully functional web app designed to enhance German vocabulary. As a front-end developer, I usually focus on the user interface, but for this project, I’ve also implemented the back-end using Firebase. It’s ready to use and provides a seamless learning experience by storing data and synchronizing it across devices.
-                           </p>
-                           <div class="project__used">
-                              <ul class="project__usedList">
-                                 <li>
-                                    <img class="project__usedIcon" src="./img/icons/html.png" alt="HTML icon">
-                                 </li>
-                                 <li>
-                                    <img class="project__usedIcon" src="./img/icons/css.png" alt="CSS icon">
-                                 </li>
-                                 <li>
-                                    <img class="project__usedIcon" src="./img/icons/js.png" alt="JS Icon">
-                                 </li>
-                                 <li>
-                                    <img class="project__usedIcon" src="./img/icons/react.png" alt="React icon">
-                                 </li>
-                                 <li>
-                                    <img class="project__usedIcon" src="./img/icons/redux.png" alt="Redux icon">
-                                 </li>
-                                 <li>
-                                    <img class="project__usedIcon" src="./img/icons/firebase.png" alt="Redux icon">
-                                 </li>
-                              </ul>
-                           </div>
-                           <div class="project__buttons">
-                              <a target="_blank" href="https://wortschatz-51329.web.app/"><button class="project__button" type="button">View Live</button></a>
-                              <a target="_blank" href="https://github.com/ArtakN/lingo_app"><button class="project__button" type="button">Github Repo</button></a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-            </div>
-         </section>
-         <section class="main__contact contact" id="contact">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/favicon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/favicon/site.webmanifest" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Artak Navoyan | Front-End Dev</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container">
+					<p class="header__logo"><a href="index.html">Artak N.</a></p>
+					<nav class="header__webMenu">
+						<ul class="header__webMenuList">
+							<li><a href="#home" class="header__webMenulink">Home</a></li>
+							<li><a href="#about" class="header__webMenulink">About</a></li>
+							<li>
+								<a href="#projects" class="header__webMenulink">Projects</a>
+							</li>
+							<li>
+								<a href="#contact" class="header__webMenulink">Contact</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__hamburger">
+						<span></span>
+					</div>
+					<div class="header__mobileMenu">
+						<div class="header__closeMobileMenu">
+							<img src="./img/icons/close.svg" alt="Menu close icon" />
+						</div>
+						<nav>
+							<ul class="header__mobileMenuList">
+								<li><a href="#home" class="header__mobileMenuItem">Home</a></li>
+								<li>
+									<a href="#about" class="header__mobileMenuItem">About</a>
+								</li>
+								<li>
+									<a href="#projects" class="header__mobileMenuItem"
+										>Projects</a
+									>
+								</li>
+								<li>
+									<a href="#contact" class="header__mobileMenuItem">Contact</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<main class="main">
+				<section class="main__home home" id="home">
+					<div class="home__container">
+						<div class="home__info">
+							<div>
+								<p class="home__title">
+									Hi, I am <br />
+									<span>Artak Navoyan</span>
+								</p>
+								<p class="home__subtitle">Front-End Developer</p>
+							</div>
+							<div>
+								<img class="home__img" src="./img/me.jpg" alt="My_photo" />
+							</div>
+						</div>
+						<div class="home__skills">
+							<p class="home__skillsTitle">Tech Stack</p>
+							<ul class="home__skillsList">
+								<li><img src="./img/icons/html.png" alt="HTML Icon" /></li>
+								<li><img src="./img/icons/css.png" alt="CSS Icon" /></li>
+								<li><img src="./img/icons/js.png" alt="JS Icon" /></li>
+								<li><img src="./img/icons/react.png" alt="React Icon" /></li>
+								<li><img src="./img/icons/redux.png" alt="Redux Icon" /></li>
+								<li><img src="./img/icons/ts.png" alt="Redux Icon" /></li>
+								<li><img src="./img/icons/sass.png" alt="Redux Icon" /></li>
+								<li><img src="./img/icons/tw.png" alt="Redux Icon" /></li>
+								<li><img src="./img/icons/git.png" alt="Redux Icon" /></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="main__about about" id="about">
+					<div class="about__container">
+						<div class="about__imgBlock">
+							<img
+								src="./img/about.png"
+								alt="About me section image"
+								class="about__img"
+							/>
+						</div>
+						<div class="about__textBlock">
+							<p class="about__title">About Me</p>
+							<p class="about__text">
+								As a Front-End Developer, I have a strong skill set in HTML,
+								CSS, SCSS, JavaScript, React, Redux Toolkit and TypeScript. I am
+								passionate about designing and building responsive websites that
+								provide a seamless user experience. My expertise lies in
+								creating dynamic and engaging interfaces through writing clean
+								and optimized code, and utilizing the latest development tools
+								and techniques. I am also a team player who enjoys collaborating
+								with cross-functional teams to deliver outstanding web
+								applications.
+							</p>
+						</div>
+					</div>
+				</section>
+				<section class="main__projects projects" id="projects">
+					<div class="projects__container">
+						<p class="projects__title">Projects</p>
+						<div class="projects__project project">
+							<div class="project__item">
+								<div>
+									<img
+										class="project__image"
+										src="./img/project-1.png"
+										alt="Project image"
+									/>
+								</div>
+								<div class="project__info">
+									<p class="project__title">CryptoView</p>
+									<p class="project__description">
+										CryptoView is a web application for cryptocurrency
+										enthusiasts and traders. It offers real-time tracking of the
+										top 50 cryptocurrencies, sourced directly from CoinGecko.
+										The platform also provides learning resources to help users
+										understand the world of cryptocurrencies.
+									</p>
+									<div class="project__used">
+										<ul class="project__usedList">
+											<li>
+												<img
+													class="project__usedIcon"
+													src="./img/icons/html.png"
+													alt="HTML icon"
+												/>
+											</li>
+											<li>
+												<img
+													class="project__usedIcon"
+													src="./img/icons/sass.png"
+													alt="SCSS icon"
+												/>
+											</li>
+											<li>
+												<img
+													class="project__usedIcon"
+													src="./img/icons/js.png"
+													alt="JS Icon"
+												/>
+											</li>
+										</ul>
+									</div>
+									<div class="project__buttons">
+										<a
+											href="https://myportfolio-crytoview.netlify.app"
+											target="_blank"
+											><button class="project__button" type="button">
+												View Live
+											</button></a
+										>
+										<a
+											href="https://github.com/ArtakN/crypto-app"
+											target="_blank"
+											><button class="project__button" type="button">
+												Github Repo
+											</button></a
+										>
+									</div>
+								</div>
+							</div>
+							<div class="project__item">
+								<div>
+									<img
+										class="project__image"
+										src="./img/project-2.png"
+										alt="Project image"
+									/>
+								</div>
+								<div class="project__info">
+									<p class="project__title">Wortschatz</p>
+									<p class="project__description">
+										Wortschatz is a fully functional web app designed to enhance
+										German vocabulary. As a front-end developer, I usually focus
+										on the user interface, but for this project, I’ve also
+										implemented the back-end using Firebase. It’s ready to use
+										and provides a seamless learning experience by storing data
+										and synchronizing it across devices.
+									</p>
+									<div class="project__used">
+										<ul class="project__usedList">
+											<li>
+												<img
+													class="project__usedIcon"
+													src="./img/icons/html.png"
+													alt="HTML icon"
+												/>
+											</li>
+											<li>
+												<img
+													class="project__usedIcon"
+													src="./img/icons/css.png"
+													alt="CSS icon"
+												/>
+											</li>
+											<li>
+												<img
+													class="project__usedIcon"
+													src="./img/icons/js.png"
+													alt="JS Icon"
+												/>
+											</li>
+											<li>
+												<img
+													class="project__usedIcon"
+													src="./img/icons/react.png"
+													alt="React icon"
+												/>
+											</li>
+											<li>
+												<img
+													class="project__usedIcon"
+													src="./img/icons/redux.png"
+													alt="Redux icon"
+												/>
+											</li>
+											<li>
+												<img
+													class="project__usedIcon"
+													src="./img/icons/firebase.png"
+													alt="Redux icon"
+												/>
+											</li>
+										</ul>
+									</div>
+									<div class="project__buttons">
+										<a target="_blank" href="https://wortschatz-51329.web.app/"
+											><button class="project__button" type="button">
+												View Live
+											</button></a
+										>
+										<a
+											target="_blank"
+											href="https://github.com/ArtakN/lingo_app"
+											><button class="project__button" type="button">
+												Github Repo
+											</button></a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- <section class="main__contact contact" id="contact">
             <div class="contact__container">
                <div class="contact__title">Contact</div>
                <div class="contact__info">
@@ -187,9 +300,9 @@
                   </div>
                </div>
             </div>
-         </section>
-      </main>
-   </div>
-   <script src="script.js"></script>
-</body>
+         </section> -->
+			</main>
+		</div>
+		<script src="script.js"></script>
+	</body>
 </html>
