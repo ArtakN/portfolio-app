@@ -1,50 +1,36 @@
-# React + TypeScript + Vite
+what do you think about this read me
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Artak Navoyan - Portfolio
 
-Currently, two official plugins are available:
+Welcome to my personal portfolio website! I’m Artak Navoyan, a Front-End Developer passionate about building modern, responsive, and user-friendly web applications using React, TypeScript, and other cutting-edge technologies. This portfolio showcases my projects, skills, and experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
 
-## Expanding the ESLint configuration
+Check out the live version of my portfolio: [artaknavoyan.de](https://artaknavoyan.de)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠️ Tech Stack
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React** – Component-based UI library
+- **TypeScript** – Type-safe JavaScript
+- **Vite** – Fast build tool for development
+- **Tailwind CSS** – Utility-first styling framework
+- **Firebase** – Hosting & real-time database
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Sections
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **Home**: Introduction with a profile picture and tech stack.
+- **About**: A brief description of my skills and experience as a Front-End Developer.
+- **Projects**: Showcase of my previous work with links and descriptions.
+- **Contact**: A form or links to connect with me.
+
+---
+
+## 📬 Contact
+
+- **Email**: [navoyan.ab@gmail.com](mailto:navoyan.ab@gmail.com)
+- **LinkedIn**: [linkedin.com/in/artaknavoyan](https://www.linkedin.com/in/artaknavoyan)
+- **GitHub**: [github.com/artaknavoyan](https://github.com/artaknavoyan)
