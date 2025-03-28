@@ -33,5 +33,5 @@ Here are the technologies I used to build this portfolio website:
 I’d love to connect! Feel free to reach out for job opportunities or collaboration:
 
 - **Email**: [navoyan.ab@gmail.com](mailto:navoyan.ab@gmail.com)
-- **LinkedIn**: [linkedin.com/in/artak-navoyan](https://linkedin.com/in/your-profile)
+- **LinkedIn**: [linkedin.com/in/artak-navoyan](https://www.linkedin.com/in/artak-navoyan-7564a4149/)
 - **GitHub**: [github.com/ArtakN](https://github.com/ArtakN)
