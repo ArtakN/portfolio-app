@@ -6,7 +6,8 @@ export const projects: Project[] = [
 		description:
 			'Playzy is a production full-stack Telegram Mini App for party games with localized flows, premium features, and a backend powered by PostgreSQL and Redis.',
 		imageUrl: 'img/project-4.png',
-		imagePosition: 'center 10%',
+		imagePosition: 'center 8%',
+		imageHeightClass: 'h-56 md:h-[250px]',
 		liveUrl: 'https://t.me/PlayzyOfficialBot/playzyapp?startapp=home',
 		tech: [
 			{

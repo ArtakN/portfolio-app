@@ -11,4 +11,5 @@ export interface Project {
 	repoUrl?: string
 	tech: Tech[]
 	imagePosition?: string
+	imageHeightClass?: string
 }
