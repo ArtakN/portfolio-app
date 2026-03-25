@@ -6,7 +6,7 @@ export const projects: Project[] = [
 		description:
 			'CryptoView is a web application for cryptocurrency enthusiasts and traders. It offers real-time tracking of the top 50 cryptocurrencies, sourced directly from CoinGecko. The platform also provides learning resources to help users understand the world of cryptocurrencies.',
 		imageUrl: 'img/project-1.png',
-		liveUrl: 'https://myportfolio-crytoview.netlify.app',
+		liveUrl: 'https://crypto-view-250325.web.app',
 		repoUrl: 'https://github.com/ArtakN/crypto-app',
 		tech: [
 			{
