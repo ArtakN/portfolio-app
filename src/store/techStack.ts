@@ -38,7 +38,7 @@ export const techStack: Tech[] = [
 		icon: 'img/icons/tech/zustand.png',
 	},
 	{
-		title: 'FireBase',
+		title: 'Firebase',
 		icon: 'img/icons/tech/firebase.png',
 	},
 	{

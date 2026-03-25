@@ -2,3 +2,7 @@
 	margin: 0 auto;
 	color: #fff;
 }
+
+section[id] {
+	scroll-margin-top: 6rem;
+}

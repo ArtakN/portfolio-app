@@ -8,14 +8,14 @@ export function SingleProject({ project }: SingleProjectProps) {
 	const techStack = project.tech
 
 	return (
-		<div className='bg-[#212121] p-4 rounded-xl shadow-lg hover:bg-[#292929] transition-all duration-300'>
+		<article className='bg-[#212121] p-4 rounded-xl shadow-lg hover:bg-[#292929] transition-all duration-300'>
 			<div>
 				<div className='flex flex-col md:flex-row gap-6 items-stretch '>
 					<div className='md:w-1/2'>
 						<img
 							className='w-full h-full object-fill rounded-xl'
 							src={project.imageUrl}
-							alt='Project image'
+							alt={`${project.title} preview`}
 						/>
 					</div>
 					<div className='md:w-1/2 flex flex-col justify-between'>
@@ -46,26 +46,24 @@ export function SingleProject({ project }: SingleProjectProps) {
 								href={project.liveUrl}
 								target='_blank'
 								rel='noopener noreferrer'
-								className='w-full'
+								className='w-full bg-transparent border border-[#007ced] hover:bg-[#007ced] font-bold py-2 rounded-lg transition-all duration-300 text-center'
+								aria-label={`Open live version of ${project.title}`}
 							>
-								<button className='w-full bg-transparent border border-[#007ced] hover:bg-[#007ced] font-bold py-2 rounded-lg transition-all duration-300'>
-									View Live
-								</button>
+								View Live
 							</a>
 							<a
 								href={project.repoUrl}
 								target='_blank'
 								rel='noopener noreferrer'
-								className='w-full'
+								className='w-full bg-transparent hover:bg-[#007ced] font-bold py-2 rounded-lg border border-[#007ced] transition-all duration-300 text-center'
+								aria-label={`Open GitHub repository for ${project.title}`}
 							>
-								<button className='w-full bg-transparent hover:bg-[#007ced] font-bold py-2 rounded-lg border border-[#007ced] transition-all duration-300'>
-									Github Repo
-								</button>
+								GitHub Repo
 							</a>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</article>
 	)
 }

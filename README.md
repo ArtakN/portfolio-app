@@ -1,37 +1,33 @@
 # Artak Navoyan - Portfolio
 
-Welcome to my personal portfolio website! I’m Artak Navoyan, a Front-End Developer passionate about building modern, responsive, and user-friendly web applications using React, TypeScript, and other cutting-edge technologies. This portfolio showcases my projects, skills, and experience.
+Personal portfolio website built with React, TypeScript, Vite, and Tailwind CSS. The project presents my profile, core tech stack, selected work, and contact links in a simple single-page layout.
 
-## 🌐 Live Demo
+## Live Demo
 
-Explore my portfolio live: [artaknavoyan.de](https://artaknavoyan.de)
+[artaknavoyan.de](https://artaknavoyan.de)
 
-## 📖 What You’ll Find on My Portfolio
+## Sections
 
-My portfolio is a single-page website, designed to highlight my work and skills as a Front-End Developer. Here’s what you can expect:
+- Home
+- About
+- Projects
+- Contact
 
-- **Home**: A brief introduction with my profile picture and tech stack.
-- **About**: An overview of my experience and skills as a Front-End Developer.
-- **Projects**: A showcase of my work, including:
-  - **TaskFlow**: A Trello-inspired task management app with real-time data storage using Firebase Firestore.
-  - **CryptoView**: A cryptocurrency tracker that fetches real-time data from the CoinGecko API.
-- **Contact**: Links to connect with me for opportunities or collaboration.
+## Featured Projects
 
-## 🛠️ Tech Stack
+- **Crypto View**: A cryptocurrency tracker that uses CoinGecko data.
+- **Task Flow**: A Trello-inspired task management app with Firebase Firestore.
 
-Here are the technologies I used to build this portfolio website:
+## Tech Stack
 
-- **HTML** – Structuring web content.
-- **Tailwind CSS** – Styling and responsive design.
-- **JavaScript/TypeScript** – Adding interactivity and type safety.
-- **React** – Building component-based user interfaces.
-- **Vite** – Fast development and build tool.
-- **Firebase** – Hosting and Firestore for real-time data.
+- React
+- TypeScript
+- Tailwind CSS
+- Vite
+- Firebase Hosting
 
-## 📬 Contact Me
+## Contact
 
-I’d love to connect! Feel free to reach out for job opportunities or collaboration:
-
-- **Email**: [navoyan.ab@gmail.com](mailto:navoyan.ab@gmail.com)
-- **LinkedIn**: [linkedin.com/in/artak-navoyan](https://www.linkedin.com/in/artak-navoyan-7564a4149/)
-- **GitHub**: [github.com/ArtakN](https://github.com/ArtakN)
+- Email: [navoyan.ab@gmail.com](mailto:navoyan.ab@gmail.com)
+- LinkedIn: [linkedin.com/in/artak-navoyan](https://www.linkedin.com/in/artak-navoyan-7564a4149/)
+- GitHub: [github.com/ArtakN](https://github.com/ArtakN)
