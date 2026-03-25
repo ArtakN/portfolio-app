@@ -19,7 +19,7 @@ export const Header = () => {
 		<header className='fixed top-0 left-0 w-full bg-[#212121] shadow-[0_4px_4px_rgba(0,0,0,0.25)] z-50'>
 			<div className='container mx-auto flex h-20 justify-between items-center px-4 md:px-6 lg:px-8'>
 				<p className='text-xl md:text-2xl font-semibold text-white'>
-					<a href='#home'>Artak N.</a>
+					<a href='#home'>My Portfolio</a>
 				</p>
 				<nav className='hidden md:block' aria-label='Primary navigation'>
 					<ul className='flex gap-10 text-white'>
@@ -132,3 +132,4 @@ export const Header = () => {
 		</header>
 	)
 }
+
