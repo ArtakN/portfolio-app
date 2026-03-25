@@ -10,4 +10,5 @@ export interface Project {
 	liveUrl: string
 	repoUrl: string
 	tech: Tech[]
+	imagePosition?: string
 }

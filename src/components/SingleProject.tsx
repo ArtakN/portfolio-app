@@ -10,12 +10,13 @@ export function SingleProject({ project }: SingleProjectProps) {
 	return (
 		<article className='bg-[#212121] p-4 rounded-xl shadow-lg hover:bg-[#292929] transition-all duration-300'>
 			<div>
-				<div className='flex flex-col md:flex-row gap-6 items-stretch '>
-					<div className='md:w-1/2'>
+				<div className='flex flex-col md:flex-row gap-6 items-stretch'>
+					<div className='md:w-1/2 overflow-hidden rounded-xl bg-[#181818]'>
 						<img
-							className='w-full h-full object-fill rounded-xl'
+							className='w-full h-72 md:h-full md:min-h-[360px] object-cover rounded-xl'
 							src={project.imageUrl}
 							alt={`${project.title} preview`}
+							style={{ objectPosition: project.imagePosition ?? 'center' }}
 						/>
 					</div>
 					<div className='md:w-1/2 flex flex-col justify-between'>
