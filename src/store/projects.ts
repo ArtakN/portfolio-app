@@ -2,6 +2,28 @@ import { Project } from '../model/types'
 
 export const projects: Project[] = [
 	{
+		title: 'Recipe Radar',
+		description:
+			'Recipe Radar is a recipe discovery app that helps users find meals based on available ingredients, browse popular dishes, view detailed cooking steps, and save favorites for later.',
+		imageUrl: 'img/project-3.jpg',
+		liveUrl: 'https://recipe-radar-250325.web.app',
+		repoUrl: 'https://github.com/ArtakN/recipe-radar',
+		tech: [
+			{
+				title: 'Tailwind CSS',
+				icon: 'img/icons/tech/tailwind.png',
+			},
+			{
+				title: 'TypeScript',
+				icon: 'img/icons/tech/typescript.png',
+			},
+			{
+				title: 'React',
+				icon: 'img/icons/tech/react.png',
+			},
+		],
+	},
+	{
 		title: 'Crypto View',
 		description:
 			'CryptoView is a web application for cryptocurrency enthusiasts and traders. It offers real-time tracking of the top 50 cryptocurrencies, sourced directly from CoinGecko. The platform also provides learning resources to help users understand the world of cryptocurrencies.',
@@ -62,4 +84,3 @@ export const projects: Project[] = [
 		],
 	},
 ]
-
