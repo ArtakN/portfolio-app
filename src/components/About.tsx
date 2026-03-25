@@ -16,16 +16,18 @@ export function About() {
 					</div>
 					<div className='md:w-1/2'>
 						<p className='text-gray-300 text-justify text-lg'>
-							I am a frontend developer focused on building clean, responsive,
-							and practical user interfaces. Most of my work is centered around
-							React, TypeScript, Tailwind, and state management tools such as
-							Redux Toolkit and Zustand.
+							I am a full-stack developer experienced with modern web
+							technologies such as React, TypeScript, Node.js, Express,
+							and MongoDB or SQL. I enjoy building scalable, performant
+							applications with clean architecture and user-friendly design.
 						</p>
 						<p className='text-gray-300 text-justify text-lg mt-5'>
-							I care about structure, readability, and the small UI details that
-							make products feel reliable in everyday use. I enjoy turning ideas
-							into polished interfaces and collaborating with teams to ship
-							solid web experiences.
+							I am a motivated and fast-learning developer who enjoys solving
+							challenging problems and delivering high-quality code. I work
+							well in team environments and value clear communication, code
+							maintainability, and continuous learning. In projects, I aim
+							to balance strong frontend UX with reliable backend
+							functionality to build efficient applications.
 						</p>
 					</div>
 				</div>

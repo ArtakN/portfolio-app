@@ -6,6 +6,7 @@ interface SingleProjectProps {
 
 export function SingleProject({ project }: SingleProjectProps) {
 	const techStack = project.tech
+	const isRecipeRadar = project.title === 'Recipe Radar'
 
 	return (
 		<article className='bg-[#212121] p-4 rounded-xl shadow-lg hover:bg-[#292929] transition-all duration-300'>
@@ -13,7 +14,9 @@ export function SingleProject({ project }: SingleProjectProps) {
 				<div className='flex flex-col md:flex-row gap-6 items-stretch'>
 					<div className='md:w-1/2 overflow-hidden rounded-xl bg-[#181818]'>
 						<img
-							className='w-full h-72 md:h-full md:min-h-[360px] object-cover rounded-xl'
+							className={`w-full object-cover rounded-xl ${
+								isRecipeRadar ? 'h-72 md:h-full md:min-h-[360px]' : 'h-56 md:h-[320px]'
+							}`}
 							src={project.imageUrl}
 							alt={`${project.title} preview`}
 							style={{ objectPosition: project.imagePosition ?? 'center' }}
