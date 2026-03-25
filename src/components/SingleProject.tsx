@@ -15,7 +15,9 @@ export function SingleProject({ project }: SingleProjectProps) {
 					<div className='md:w-1/2 overflow-hidden rounded-xl bg-[#181818]'>
 						<img
 							className={`w-full object-cover rounded-xl ${
-								isRecipeRadar ? 'h-72 md:h-full md:min-h-[360px]' : 'h-56 md:h-[320px]'
+								isRecipeRadar
+									? 'h-72 md:h-full md:min-h-[360px]'
+									: 'h-56 md:h-full md:min-h-[320px]'
 							}`}
 							src={project.imageUrl}
 							alt={`${project.title} preview`}
