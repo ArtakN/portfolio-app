@@ -18,9 +18,9 @@ export function SingleProject({ project }: SingleProjectProps) {
 		<article className='bg-[#212121] p-4 rounded-xl shadow-lg hover:bg-[#292929] transition-all duration-300'>
 			<div className='h-[540px] md:h-[360px]'>
 				<div className='flex h-full flex-col md:flex-row gap-6'>
-					<div className='h-56 md:h-full md:w-1/2 overflow-hidden rounded-xl bg-[#181818] shrink-0'>
+					<div className='h-56 md:h-full md:w-1/2 overflow-hidden rounded-xl bg-[#181818] shrink-0 flex items-center justify-center p-2'>
 						<img
-							className={`w-full h-full object-cover rounded-xl ${project.imageScaleClass ?? ''}`}
+							className='w-full h-full object-contain rounded-lg'
 							src={project.imageUrl}
 							alt={`${project.title} preview`}
 							style={{ objectPosition: project.imagePosition ?? 'center' }}
