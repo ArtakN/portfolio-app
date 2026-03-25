@@ -6,14 +6,11 @@ export function Hero() {
 			<div className='container mx-auto max-w-5xl flex flex-col gap-10'>
 				<div className='flex flex-col md:flex-row items-center justify-between gap-10'>
 					<div className='text-center md:text-left'>
-						<p className='text-lg md:text-xl text-gray-400 mb-3'>
-							Full-Stack Developer based in Hamburg
-						</p>
 						<h1 className='text-3xl md:text-4xl font-semibold leading-tight'>
 							Hi, I am <br />
 							<span className='text-5xl md:text-6xl'>Artak Navoyan</span>
 						</h1>
-						<p className='text-xl md:text-2xl text-gray-400 mt-4 max-w-xl'>
+						<p className='text-lg md:text-xl text-gray-400 mt-4 max-w-xl'>
 							Full-Stack Developer based in Hamburg
 						</p>
 					</div>
