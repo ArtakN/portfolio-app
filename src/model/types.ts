@@ -8,7 +8,7 @@ export interface Project {
 	description: string
 	imageUrl: string
 	liveUrl: string
-	repoUrl: string
+	repoUrl?: string
 	tech: Tech[]
 	imagePosition?: string
 }

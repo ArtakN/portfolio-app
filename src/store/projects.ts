@@ -2,6 +2,32 @@ import { Project } from '../model/types'
 
 export const projects: Project[] = [
 	{
+		title: 'Playzy',
+		description:
+			'Playzy is a production full-stack Telegram Mini App for party games. It includes a game catalog, localized user flows, profile settings, rejoin support, and premium monetization through Telegram Stars, powered by a dedicated backend with PostgreSQL and Redis.',
+		imageUrl: 'img/project-4.png',
+		imagePosition: 'center top',
+		liveUrl: 'https://t.me/PlayzyOfficialBot/playzyapp?startapp=home',
+		tech: [
+			{
+				title: 'TypeScript',
+				icon: 'img/icons/tech/typescript.png',
+			},
+			{
+				title: 'React',
+				icon: 'img/icons/tech/react.png',
+			},
+			{
+				title: 'Zustand',
+				icon: 'img/icons/tech/zustand.png',
+			},
+			{
+				title: 'Tailwind CSS',
+				icon: 'img/icons/tech/tailwind.png',
+			},
+		],
+	},
+	{
 		title: 'Recipe Radar',
 		description:
 			'Recipe Radar is a recipe discovery app that helps users find meals based on available ingredients, browse popular dishes, view detailed cooking steps, and save favorites for later.',

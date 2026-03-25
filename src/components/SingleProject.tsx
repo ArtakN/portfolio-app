@@ -57,15 +57,17 @@ export function SingleProject({ project }: SingleProjectProps) {
 							>
 								View Live
 							</a>
-							<a
-								href={project.repoUrl}
-								target='_blank'
-								rel='noopener noreferrer'
-								className='w-full bg-transparent hover:bg-[#007ced] font-bold py-2 rounded-lg border border-[#007ced] transition-all duration-300 text-center'
-								aria-label={`Open GitHub repository for ${project.title}`}
-							>
-								GitHub Repo
-							</a>
+							{project.repoUrl ? (
+								<a
+									href={project.repoUrl}
+									target='_blank'
+									rel='noopener noreferrer'
+									className='w-full bg-transparent hover:bg-[#007ced] font-bold py-2 rounded-lg border border-[#007ced] transition-all duration-300 text-center'
+									aria-label={`Open GitHub repository for ${project.title}`}
+								>
+									GitHub Repo
+								</a>
+							) : null}
 						</div>
 					</div>
 				</div>
