@@ -4,35 +4,41 @@ interface SingleProjectProps {
 	project: Project
 }
 
+const descriptionClampStyle = {
+	display: '-webkit-box',
+	WebkitBoxOrient: 'vertical' as const,
+	WebkitLineClamp: 5,
+	overflow: 'hidden',
+}
+
 export function SingleProject({ project }: SingleProjectProps) {
 	const techStack = project.tech
-	const isRecipeRadar = project.title === 'Recipe Radar'
-	const imageHeightClass = isRecipeRadar
-		? 'h-72 md:h-full md:min-h-[360px]'
-		: 'h-56 md:h-full md:min-h-[320px]'
 
 	return (
 		<article className='bg-[#212121] p-4 rounded-xl shadow-lg hover:bg-[#292929] transition-all duration-300'>
-			<div>
-				<div className='flex flex-col md:flex-row gap-6 items-stretch'>
-					<div className='md:w-1/2 overflow-hidden rounded-xl bg-[#181818]'>
+			<div className='h-[540px] md:h-[360px]'>
+				<div className='flex h-full flex-col md:flex-row gap-6'>
+					<div className='h-56 md:h-full md:w-1/2 overflow-hidden rounded-xl bg-[#181818] shrink-0'>
 						<img
-							className={`w-full object-cover rounded-xl ${imageHeightClass} ${project.imageScaleClass ?? ''}`}
+							className={`w-full h-full object-cover rounded-xl ${project.imageScaleClass ?? ''}`}
 							src={project.imageUrl}
 							alt={`${project.title} preview`}
 							style={{ objectPosition: project.imagePosition ?? 'center' }}
 						/>
 					</div>
-					<div className='md:w-1/2 flex flex-col justify-between'>
-						<div className='flex flex-col'>
+					<div className='md:w-1/2 flex min-h-0 flex-col justify-between'>
+						<div className='flex min-h-0 flex-col'>
 							<h3 className='text-xl font-semibold text-start mb-6'>
 								{project.title}
 							</h3>
-							<p className='text-gray-300 text-lg text-justify flex-grow'>
+							<p
+								className='text-gray-300 text-lg text-justify'
+								style={descriptionClampStyle}
+							>
 								{project.description}
 							</p>
 						</div>
-						<ul className='flex gap-4 justify-center my-8'>
+						<ul className='flex flex-wrap gap-4 justify-center my-6 md:my-8'>
 							{techStack.map(tech => (
 								<li key={tech.title} className='relative group'>
 									<img
