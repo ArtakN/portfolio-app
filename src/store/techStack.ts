@@ -10,10 +10,6 @@ export const techStack: Tech[] = [
 		icon: 'img/icons/tech/css.png',
 	},
 	{
-		title: 'SASS',
-		icon: 'img/icons/tech/sass.png',
-	},
-	{
 		title: 'Tailwind CSS',
 		icon: 'img/icons/tech/tailwind.png',
 	},
@@ -42,10 +38,6 @@ export const techStack: Tech[] = [
 		icon: 'img/icons/tech/redis.png',
 	},
 	{
-		title: 'Telegram',
-		icon: 'img/icons/tech/telegram.png',
-	},
-	{
 		title: 'Redux',
 		icon: 'img/icons/tech/redux.png',
 	},
@@ -57,9 +49,4 @@ export const techStack: Tech[] = [
 		title: 'Firebase',
 		icon: 'img/icons/tech/firebase.png',
 	},
-	{
-		title: 'Feature Sliced Design',
-		icon: 'img/icons/tech/fsd.png',
-	},
 ]
-

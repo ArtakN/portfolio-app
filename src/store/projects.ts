@@ -22,6 +22,10 @@ export const projects: Project[] = [
 				icon: 'img/icons/tech/nodejs.png',
 			},
 			{
+				title: 'Fastify',
+				icon: 'img/icons/tech/fastify.png',
+			},
+			{
 				title: 'PostgreSQL',
 				icon: 'img/icons/tech/postgresql.png',
 			},
@@ -119,4 +123,3 @@ export const projects: Project[] = [
 		],
 	},
 ]
-
