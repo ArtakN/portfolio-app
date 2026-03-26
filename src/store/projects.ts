@@ -4,7 +4,7 @@ export const projects: Project[] = [
 	{
 		title: 'Playzy',
 		description:
-			'Playzy is a production full-stack Telegram Mini App for party games. It features a game catalog, localized user flows, profile settings, rejoin support, and premium monetization through Telegram Stars, backed by PostgreSQL and Redis.',
+			'Playzy is a production-ready full-stack Telegram Mini App for party games. It features a game catalog, localized user flows, profile settings, rejoin support, and premium monetization through Telegram Stars, backed by PostgreSQL and Redis.',
 		imageUrl: 'img/project-4.png',
 		imagePosition: 'center 8%',
 		liveUrl: 'https://t.me/PlayzyOfficialBot/playzyapp?startapp=home',
@@ -123,3 +123,4 @@ export const projects: Project[] = [
 		],
 	},
 ]
+
