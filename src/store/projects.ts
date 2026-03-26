@@ -71,10 +71,6 @@ export const projects: Project[] = [
 		repoUrl: 'https://github.com/ArtakN/taskflow',
 		tech: [
 			{
-				title: 'HTML',
-				icon: 'img/icons/tech/html.png',
-			},
-			{
 				title: 'Tailwind CSS',
 				icon: 'img/icons/tech/tailwind.png',
 			},
@@ -109,10 +105,6 @@ export const projects: Project[] = [
 		repoUrl: 'https://github.com/ArtakN/crypto-app',
 		tech: [
 			{
-				title: 'HTML',
-				icon: 'img/icons/tech/html.png',
-			},
-			{
 				title: 'CSS',
 				icon: 'img/icons/tech/css.png',
 			},
@@ -123,4 +115,5 @@ export const projects: Project[] = [
 		],
 	},
 ]
+
 
