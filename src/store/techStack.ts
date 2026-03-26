@@ -30,6 +30,22 @@ export const techStack: Tech[] = [
 		icon: 'img/icons/tech/react.png',
 	},
 	{
+		title: 'Node.js',
+		icon: 'img/icons/tech/nodejs.png',
+	},
+	{
+		title: 'PostgreSQL',
+		icon: 'img/icons/tech/postgresql.png',
+	},
+	{
+		title: 'Redis',
+		icon: 'img/icons/tech/redis.png',
+	},
+	{
+		title: 'Telegram',
+		icon: 'img/icons/tech/telegram.png',
+	},
+	{
 		title: 'Redux',
 		icon: 'img/icons/tech/redux.png',
 	},
@@ -46,3 +62,4 @@ export const techStack: Tech[] = [
 		icon: 'img/icons/tech/fsd.png',
 	},
 ]
+

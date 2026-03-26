@@ -18,12 +18,20 @@ export const projects: Project[] = [
 				icon: 'img/icons/tech/react.png',
 			},
 			{
-				title: 'Zustand',
-				icon: 'img/icons/tech/zustand.png',
+				title: 'Node.js',
+				icon: 'img/icons/tech/nodejs.png',
 			},
 			{
-				title: 'Tailwind CSS',
-				icon: 'img/icons/tech/tailwind.png',
+				title: 'PostgreSQL',
+				icon: 'img/icons/tech/postgresql.png',
+			},
+			{
+				title: 'Redis',
+				icon: 'img/icons/tech/redis.png',
+			},
+			{
+				title: 'Telegram',
+				icon: 'img/icons/tech/telegram.png',
 			},
 		],
 	},
@@ -111,3 +119,4 @@ export const projects: Project[] = [
 		],
 	},
 ]
+
