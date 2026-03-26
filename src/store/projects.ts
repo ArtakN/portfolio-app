@@ -43,7 +43,7 @@ export const projects: Project[] = [
 		title: 'Recipe Radar',
 		description:
 			'Recipe Radar is a recipe discovery app that helps users find meals based on available ingredients, browse popular dishes, view detailed cooking steps, and save favorites for later.',
-		imageUrl: 'img/project-3.jpg',
+		imageUrl: 'img/project-3.png',
 		imagePosition: 'center center',
 		liveUrl: 'https://recipe-radar-250325.web.app',
 		repoUrl: 'https://github.com/ArtakN/recipe-radar',
@@ -115,5 +115,6 @@ export const projects: Project[] = [
 		],
 	},
 ]
+
 
 
