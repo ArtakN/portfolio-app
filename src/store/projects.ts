@@ -68,7 +68,7 @@ export const projects: Project[] = [
 			'TaskFlow is a task management web app inspired by Trello. It allows users to create boards, lists, and tasks, with real-time data storage using Firebase Firestore. The app features a clean and intuitive UI for organizing tasks efficiently.',
 		imageUrl: 'img/project-2.png',
 		liveUrl: 'https://task-flow-6c09a.web.app',
-		repoUrl: 'https://github.com/ArtakN/taskflow',
+		repoUrl: 'https://github.com/ArtakN/task-flow',
 		tech: [
 			{
 				title: 'Tailwind CSS',
@@ -102,7 +102,7 @@ export const projects: Project[] = [
 			'CryptoView is a web application for cryptocurrency enthusiasts and traders. It offers real-time tracking of the top 50 cryptocurrencies, sourced directly from CoinGecko. The platform also provides learning resources to help users understand the world of cryptocurrencies.',
 		imageUrl: 'img/project-1.png',
 		liveUrl: 'https://crypto-view-app-7e881.web.app',
-		repoUrl: 'https://github.com/ArtakN/crypto-app',
+		repoUrl: 'https://github.com/ArtakN/crypto-view',
 		tech: [
 			{
 				title: 'CSS',
@@ -115,6 +115,7 @@ export const projects: Project[] = [
 		],
 	},
 ]
+
 
 
 
